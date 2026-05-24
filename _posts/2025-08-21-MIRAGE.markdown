@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "MIRAGE"
+date:   2024-06-22 18:08:39 +00:00
+image: /images/mirage.png
+categories: selected
+code: https://github.com/Ishaan-Ansari/MIRAGE
+course: " paced"
+author: "Ishaan Ansari"
+subtitle: "Classic deep learning architectures from scratch."
+---
+Multimodal RAG framework that integrates visual embeddings from medical images with retrieved clinical knowledge, leveraging dynamic prompt control to enhance factual precision and interpretability in medical reasoning tasks.

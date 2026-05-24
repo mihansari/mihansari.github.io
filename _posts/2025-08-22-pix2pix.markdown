@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "GeoMorph"
+date:   2023-06-22 18:08:39 +00:00
+image: /images/pix2pix.png
+categories: selected
+code: https://github.com/Ishaan-Ansari/GeoMorph
+course: " paced"
+author: "Ishaan Ansari"
+subtitle: "Classic deep learning architectures from scratch."
+---
+Implemented a Pix2Pix GAN for mapping satellite/aerial images to it equivalent Map-View image

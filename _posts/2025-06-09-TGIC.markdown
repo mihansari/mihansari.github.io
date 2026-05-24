@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Text guided image clustering"
+date:   2023-06-22 18:08:39 +00:00
+image: /images/tgic.png
+categories: selected
+code: https://github.com/Ishaan-Ansari/Text-Guided-Image-Clustering
+course: " paced"
+author: "Ishaan Ansari"
+subtitle: "Classic deep learning architectures from scratch."
+---
+Compared image clustering using visual, text-guided, and fine-tuned deep learning features on Food-101 data subset.

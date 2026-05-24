@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Reinforcement Learning"
+date:   2023-06-22 18:08:39 +00:00
+image: /images/8_RL.png
+categories: self
+code: https://github.com/Ishaan-Ansari/Reinforcement-Learning 
+author: "Ishaan Ansari"
+subtitle: "Classic deep learning architectures from scratch."
+---
+This repository contains various implementations of deep reinforcement learning algorithms accross different environments.

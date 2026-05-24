@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Captionix"
+date:   2024-03-22 18:08:39 +00:00
+image: ./images/2_captionix.png
+categories: self
+code: https://github.com/Ishaan-Ansari/Captionix
+author: "Ishaan Ansari"
+subtitle: "Classic deep learning architectures from scratch."
+---
+Image caption generator using CNN, LSTM & Attention mechanism to recognize the context of an image and describe them in natural language.
