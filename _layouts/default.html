@@ -131,6 +131,73 @@
         text-decoration: underline;
         }
 
+        /* ── Curriculum Table ── */
+        .curriculum-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: var(--font-body);
+            font-size: 16px;
+            margin-top: 12px;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+        }
+
+        .curriculum-table thead th {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 11px 16px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 15px;
+            letter-spacing: 0.3px;
+        }
+
+        .curriculum-table thead th:first-child {
+            width: 90px;
+        }
+
+        .curriculum-table .unit-header td {
+            background-color: #2980b9;
+            color: #fff;
+            font-weight: 700;
+            padding: 9px 16px;
+            font-size: 14px;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+        }
+
+        .curriculum-table .main-topic td {
+            background-color: #eaf4fb;
+            font-weight: 600;
+            padding: 9px 16px;
+            color: #1a3a52;
+            border-bottom: 1px solid #c9e3f3;
+        }
+
+        .curriculum-table .sub-topic td {
+            background-color: #fff;
+            padding: 7px 16px;
+            color: #444;
+            border-bottom: 1px solid #efefef;
+        }
+
+        .curriculum-table .sub-topic td:last-child {
+            padding-left: 34px;
+        }
+
+        .curriculum-table .sub-topic:last-of-type td {
+            border-bottom: 1px solid #d6d6d6;
+        }
+
+        .curriculum-table tbody tr.sub-topic:hover td {
+            background-color: #fffbf2;
+        }
+
+        .curriculum-table tbody tr.main-topic:hover td {
+            background-color: #d6ecf8;
+        }
+
     </style>
 
 </head>
@@ -143,24 +210,46 @@
                     <tr style="padding:0px">
                         <td style="padding:2.5%;width:60%;vertical-align:middle">
                             <h1>
-                Dr. M.I.H Ansari
+                Dr. M.I.H Ansari, PhD
               </h1>
+              <h2>Welcome to <u><i>CodeMantra</i></u></h2>
               <div style="text-align:justify">
-                            <p>I am a Software Engineer L2 at <a href="https://www.tftus.com/">Think Future Technologies Pvt. Ltd</a>, part of the <a href="https://www.tftus.com/ai-development">machine learning team</a>, Where I work at the intersection of
-                                computer vision and language modelling. 
+                            <p>CodeMantra is a comprehensive learning platform dedicated to providing high-
+                            quality educational content in the field of Computer Science and Engineering. The
+                            platform offers well-structured learning materials on popular programming
+                            languages such as C, C++, Java, and Python, with detailed explanations and
+                            practical examples to help learners build strong programming foundations.. 
                             </p>
                             <p>
-                                Before this, I graduated with a Bachelor's degree in Computer Science and Engineering with Honors from <a href="https://jamiahamdard.edu/">Jamia Hamdard University, Delhi</a> in 2023. As an undergrad I worked in machine
-                                learning with a focus on computer vision in healthcare under the supervision of <a href="https://www.jamiahamdard.ac.in/facultyBio?id=709">Anam Saiyeda.</a>
+                            In addition to core programming concepts, CodeMantra also delivers insightful
+                            content on emerging and advanced technologies including Artificial Intelligence
+                            (AI), Machine Learning (ML), Deep Learning (DL), Agentic AI, Large Language
+                            Models (LLMs), and Vision Transformers (ViTs).                           
                             </p>
-                            My eventual goal is to help build AI that can reliably and autonomously perform complex tasks for extremely long periods of time, without human intervention. Read below to learn more about my research interests and past work. </p>
-                            <p style="text-align:center">
+                            Our mission is to make complex concepts simple, practical, and accessible for
+                            learners at every stage. The platform is designed to support:
+
+                            <ul>
+                                <li>Undergraduate and postgraduate students</li>
+                                <li>Research scholars</li>
+                                <li>Academicians and educators</li>
+                                <li>Technology enthusiasts and professionals</li>
+                            </ul>
+
+                            <p>
+                                Whether you are beginning your programming journey or exploring advanced AI-
+                                driven technologies, CodeMantra provides the knowledge and resources needed to
+                                enhance your technical skills and stay relevant in the rapidly evolving world of
+                                technology.                            
+                            </p>
+    
+                            <!-- <p style="text-align:center">
                                 <a href="mailto:mihansari.jh@gmail.com"> Email</a> &nbsp;/&nbsp;
                                 <a href="https://github.com/Ishaan-ansari/">GitHub</a> &nbsp;/&nbsp;
                                 <!-- <a href="https://scholar.google.com/">Google Scholar</a> &nbsp;/&nbsp; -->
-                                <a href="https://twitter.com/iamihansari">Twitter</a> &nbsp;/&nbsp;
-                                <a href="https://www.linkedin.com/in/ishaanansari/"> LinkedIn </a> &nbsp;/&nbsp;
-                                <a target="_blank" href="/pdfs/Ishaan_Ansari_ML_Engineer_2026_V4.pdf"> Curriculum Vitae </a>
+                                <!-- <a href="https://twitter.com/iamihansari">Twitter</a> &nbsp;/&nbsp; -->
+                                <!-- <a href="https://www.linkedin.com/in/ishaanansari/"> LinkedIn </a> &nbsp;/&nbsp; -->
+                                <!-- <a target="_blank" href="/pdfs/Ishaan_Ansari_ML_Engineer_2026_V4.pdf"> Curriculum Vitae </a> -->
                             </p>
                 </div>
                         </td>
@@ -174,11 +263,15 @@
                     <!-- Tab Headers -->
                     <div class="tab-headers">
                         <!-- <button class="tab-header active" onclick="switchTab(event, 'research')">Research</button> -->
-                        <button class="tab-header" onclick="switchTab(event, 'other')">Explorations</button>
-                        <button class="tab-header" onclick="switchTab(event, 'Selected')">Selected Projects</button>
-                        <button class="tab-header" onclick="switchTab(event, 'blogs')">Blog</button>
-                        <button class="tab-header" onclick="switchTab(event, 'Bookshelf')">Bookshelf</button>
-                        <button class="tab-header" onclick="switchTab(event, 'Community')">Community</button>
+                        <button class="tab-header" onclick="switchTab(event, 'other')">Explore</button>
+                        <button class="tab-header" onclick="switchTab(event, 'Selected')">Blogs</button>
+                        <button class="tab-header" onclick="switchTab(event, 'blogs')">Programming Problems</button>
+                        <button class="tab-header" onclick="switchTab(event, 'Bookshelf')">Project Ideas</button>
+                        <button class="tab-header" onclick="switchTab(event, 'Interview')">Interview Preparation</button>
+                        <button class="tab-header" onclick="switchTab(event, 'Resources')">Resources</button>
+                        <button class="tab-header" onclick="switchTab(event, 'Videos')">Video Tutorials</button>
+                        <button class="tab-header" onclick="switchTab(event, 'Contact')">Contact</button>
+                    </div>
                     </div>
 
                     <!-- Research Tab Content -->
@@ -268,37 +361,239 @@
                     <div id="other" class="tab-content active">
                         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                             <tr>
-                                <td style="padding:0%;width:100%;vertical-align:middle">
-                                    <p> These include experiments, prototypes, or learning-oriented work.
-                                    </p>
+                                <td style="padding:0% 0% 12px 0%;width:100%;vertical-align:middle">
+                                    <p>Below is a detailed overview of the key chapters that form the foundation of this book, guiding readers through the essential concepts and advanced topics in Machine Learning.</p>
                                 </td>
                             </tr>
                         </table>
-                        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 
-                            {% for post in site.posts %} {% for cat in post.categories %} {% if cat != 'research' and cat != 'selected'  and cat != 'blog' %}
-                            <tr>
-                                <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-                                    {% if post.image %}
-                                    <img src="{{ site.baseurl }}{{ post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" /> {% endif %}
-                                </td>
-                                <td style="padding:2.5%;width:75%;vertical-align:middle">
-                                    <h3>{{post.title}}</h3> {{post.authors}}
-                                    <br> {% if post.award %}
-                                    <strong style="color: rgba(243, 63, 63, 0.82);">{{post.award}}</strong>
-                                    <br> {% endif %} {% if post.arxiv %}
-                                    <a href="{{post.arxiv}}">arxiv</a> / {% endif %} {% if post.video %}
-                                    <a href="{{post.video}}">video</a> / {% endif %} {% if post.code %}
-                                    <a href="{{post.code}}">code</a> / {% endif %} {% if post.poster %}
-                                    <a href="{{post.poster}}">poster</a> / {% endif %} {% if post.slides %}
-                                    <a href="{{post.slides}}">slides</a> / {% endif %} {% if post.website %}
-                                    <a href="{{post.website}}">website</a> / {% endif %} {% if post.youtube %}
-                                    <a href="{{post.youtube}}">youtube</a> / {% endif %}
-                                    <p></p>
-                                    {{ post.excerpt }}
-                                </td>
-                            </tr>
-                            {% endif %} {% endfor %} {% endfor %}
+                        <table class="curriculum-table">
+                            <thead>
+                                <tr>
+                                    <th>S.No.</th>
+                                    <th>Topic</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- ── UNIT 1 ── -->
+                                <tr class="unit-header">
+                                    <td colspan="2">Unit – 1</td>
+                                </tr>
+                                <tr class="main-topic">
+                                    <td>1.0</td>
+                                    <td>Introduction to Machine Learning</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>1.1</td>
+                                    <td>Data</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>1.2</td>
+                                    <td>Structured Data</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>1.3</td>
+                                    <td>Semi-Structured Data</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>1.4</td>
+                                    <td>Unstructured Data</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>1.5</td>
+                                    <td>Meta Data</td>
+                                </tr>
+                                <tr class="main-topic">
+                                    <td>2.0</td>
+                                    <td>Machine Learning Techniques</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>2.1</td>
+                                    <td>Supervised Learning</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>2.2</td>
+                                    <td>Unsupervised Learning</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>2.3</td>
+                                    <td>Semi-Supervised Learning</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>2.4</td>
+                                    <td>Reinforcement Learning</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>2.5</td>
+                                    <td>Classification</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>2.6</td>
+                                    <td>Regression</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>2.7</td>
+                                    <td>Terminology used in Classification</td>
+                                </tr>
+
+                                <!-- ── UNIT 2 ── -->
+                                <tr class="unit-header">
+                                    <td colspan="2">Unit – 2</td>
+                                </tr>
+                                <tr class="main-topic">
+                                    <td>3.0</td>
+                                    <td>Linear Regression</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>3.1</td>
+                                    <td>Simple Linear Regression</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>3.2</td>
+                                    <td>Multiple Linear Regression</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>3.4</td>
+                                    <td>Positive Line of Regression</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>3.5</td>
+                                    <td>Negative Line of Regression</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>3.6</td>
+                                    <td>Cost Function</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>3.7</td>
+                                    <td>Challenges in Supervised Learning</td>
+                                </tr>
+                                <tr class="main-topic">
+                                    <td>4.0</td>
+                                    <td>Bayes Theorem</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>4.1</td>
+                                    <td>Conditional Probability</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>4.2</td>
+                                    <td>Dependent Event</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>4.3</td>
+                                    <td>Independent Event</td>
+                                </tr>
+                                <tr class="main-topic">
+                                    <td>5.0</td>
+                                    <td>Naïve Bayes Classifiers</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>5.1</td>
+                                    <td>Advantages of Naïve Bayes Classifier</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>5.2</td>
+                                    <td>Disadvantages of Naïve Bayes Classifier</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>5.3</td>
+                                    <td>Applications of Naïve Bayes Classifier</td>
+                                </tr>
+                                <tr class="main-topic">
+                                    <td>6.0</td>
+                                    <td>Types of Naïve Bayes Models</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>6.1</td>
+                                    <td>Gaussian Model</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>6.2</td>
+                                    <td>Multinomial Model</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>6.3</td>
+                                    <td>Bernoulli Model</td>
+                                </tr>
+                                <tr class="main-topic">
+                                    <td>7.0</td>
+                                    <td>Support Vector Machine</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>7.1</td>
+                                    <td>Types of Support Vector Kernel</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>7.2</td>
+                                    <td>Linear Kernel</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>7.3</td>
+                                    <td>Polynomial Kernel</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>7.4</td>
+                                    <td>Gaussian Kernel</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>7.5</td>
+                                    <td>Hyper Plane</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>7.8</td>
+                                    <td>Properties of Support Vector Machine</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>7.9</td>
+                                    <td>Issues in Support Vector Machine</td>
+                                </tr>
+
+                                <!-- ── UNIT 3 ── -->
+                                <tr class="unit-header">
+                                    <td colspan="2">Unit – 3</td>
+                                </tr>
+                                <tr class="main-topic">
+                                    <td>8.0</td>
+                                    <td>Decision Tree Algorithm</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>8.1</td>
+                                    <td>Entropy and Gini Index or Impurity</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>8.2</td>
+                                    <td>Information Gain</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>8.3</td>
+                                    <td>ID3 Algorithm</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>8.4</td>
+                                    <td>Issues in Decision Tree Algorithm</td>
+                                </tr>
+                                <tr class="main-topic">
+                                    <td>9.0</td>
+                                    <td>Instance Based Learning</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>9.1</td>
+                                    <td>K-Nearest Neighbor Learning Algorithm</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>9.2</td>
+                                    <td>Locally Weighted Regression</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>9.3</td>
+                                    <td>Radial Basis Function Networks</td>
+                                </tr>
+                                <tr class="sub-topic">
+                                    <td>9.4</td>
+                                    <td>Case-based Learning Algorithm</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
 
@@ -413,7 +708,7 @@
                             <td style="padding:0px">
                                 <br>
                                 <p style="text-align:center;font-size:small;">
-                                    "Panthi hoon main us path ka, jiski koi manzil nahi. Dharti par aakash jhuka hai, jahan koi saahil nahi..." - <em style="color: rgba(63, 81, 186, 0.8);">Kishore Kumar</em>
+                                    "hello world" - <em style="color: rgba(63, 81, 186, 0.8);">Foot note</em>
                                 </p>
                             </td>
                         </tr>
